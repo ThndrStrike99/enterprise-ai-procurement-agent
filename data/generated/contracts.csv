@@ -1,0 +1,4 @@
+contract_id,supplier_id,sku,contracted_price,terms
+CON-001,SUP-001,LAB-1001,26.17,Contract price valid through fiscal year. Preferred supplier for lab consumables.
+CON-002,SUP-002,LAB-1002,18.4,Pricing locked for twelve months. Freight included above minimum order threshold.
+CON-003,SUP-001,LAB-1003,14.1,Preferred pricing applies to all university departments.

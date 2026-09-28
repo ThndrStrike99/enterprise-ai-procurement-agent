@@ -1,0 +1,46 @@
+objects:
+  Supplier:
+    primary_key: supplier_id
+    properties:
+      - supplier_name
+      - contracted
+      - risk_score
+
+  Product:
+    primary_key: sku
+    properties:
+      - product_name
+      - category
+
+  PurchaseOrder:
+    primary_key: po_id
+    properties:
+      - department
+      - buyer
+      - supplier_id
+      - sku
+      - unit_price
+      - quantity
+      - order_date
+
+  Contract:
+    primary_key: contract_id
+    properties:
+      - supplier_id
+      - sku
+      - contracted_price
+      - terms
+
+relationships:
+  - from: Supplier
+    to: Product
+    name: sells
+  - from: Supplier
+    to: Contract
+    name: governed_by
+  - from: PurchaseOrder
+    to: Supplier
+    name: purchased_from
+  - from: PurchaseOrder
+    to: Product
+    name: contains

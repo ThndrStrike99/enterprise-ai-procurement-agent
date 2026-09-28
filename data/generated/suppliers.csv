@@ -1,0 +1,5 @@
+supplier_id,supplier_name,contracted,risk_score
+SUP-001,VWR Scientific,True,0.08
+SUP-002,Fisher Scientific,True,0.1
+SUP-003,Alkali Scientific,False,0.22
+SUP-004,LabSource Direct,False,0.31
